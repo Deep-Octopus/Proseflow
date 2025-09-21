@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+backend:
+build: ./backend
+container_name: proseflow-backend
+ports:
+- "8000:8000"
+volumes:
+- ./backend:/app
+# 挂载本地 pandoc 可执行文件路径，确保容器内可以调用
+# 请根据您系统的 pandoc 安装位置进行修改
+# 例如，在 macOS (brew) 上: /opt/homebrew/bin/pandoc
+# 在 Linux 上: /usr/bin/pandoc
+# 如果不确定，可以在终端运行 which pandoc 来查找路径
+# - /usr/bin/pandoc:/usr/bin/pandoc
+environment:
+- DATABASE_URL=sqlite:///./proseflow.db
+command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+frontend:
+build: ./frontend
+container_name: proseflow-frontend
+ports:
+- "5173:5173"
+volumes:
+- ./frontend:/app
+- /app/node_modules # 避免本地 node_modules 覆盖容器内的
+environment:
+- VITE_API_BASE_URL=http://localhost:8000
+depends_on:
+- backend
