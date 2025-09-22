@@ -1,5 +1,3 @@
-# Proseflow ✨
-
 <p align="center">
   <img src="logo.png" alt="Proseflow Logo" width="150"/>
 </p>
@@ -11,17 +9,14 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/your-username/proseflow/stargazers">
-        <img src="https://img.shields.io/github/stars/your-username/proseflow?style=flat-square" alt="GitHub stars">
+    <a href="https://github.com/Deep-Octopus/proseflow/stargazers">
+        <img src="https://img.shields.io/github/stars/Deep-Octopus/proseflow?style=flat-square" alt="GitHub stars">
     </a>
-    <a href="https://github.com/your-username/proseflow/network/members">
-        <img src="https://img.shields.io/github/forks/your-username/proseflow?style=flat-square" alt="GitHub forks">
+    <a href="https://github.com/Deep-Octopus/proseflow/network/members">
+        <img src="https://img.shields.io/github/forks/Deep-Octopus/proseflow?style=flat-square" alt="GitHub forks">
     </a>
-    <a href="https://github.com/your-username/proseflow/issues">
-        <img src="https://img.shields.io/github/issues/your-username/proseflow?style=flat-square" alt="GitHub issues">
-    </a>
-    <a href="https://github.com/your-username/proseflow/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/your-username/proseflow?style=flat-square" alt="License">
+    <a href="https://github.com/Deep-Octopus/proseflow/issues">
+        <img src="https://img.shields.io/github/issues/Deep-Octopus/proseflow?style=flat-square" alt="GitHub issues">
     </a>
 </p>
 
@@ -141,7 +136,7 @@ proseflow/
 
 ## 📄 许可证
 
-本项目采用 [MIT License](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/your-username/proseflow/blob/main/LICENSE) 开源。
+本项目采用 [MIT License](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/Deep-Octopus/proseflow/blob/main/LICENSE) 开源。
 
 导出样式: 导出为 PDF/Word 时，样式可能与在线预览有轻微差异。后端使用 Pandoc 进行转换，您可以修改 pandoc_service.py 来定制更复杂的导出样式。
 
