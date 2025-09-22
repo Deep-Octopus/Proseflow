@@ -126,7 +126,9 @@ proseflow/
 
 ## ⚠️ 注意事项
 
-本项目默认使用“硅基流动”大模型 API。如果你想替换为其他模型（如 OpenAI GPT, Anthropic Claude 等），你需要修改后端的核心服务文件： `backend/app/core/llm_service.py` 中的 API 调用逻辑。
+1. 本项目默认使用“硅基流动”大模型 API。如果你想替换为其他模型（如 OpenAI GPT, Anthropic Claude 等），你需要修改后端的核心服务文件： `backend/app/core/llm_service.py` 中的 API 调用逻辑。
+2. 导出为 PDF/Word 时，样式可能与在线预览有轻微差异。后端使用 Pandoc 进行转换，您可以修改 pandoc_service.py 来定制更复杂的导出样式。
+3. 项目默认使用 SQLite，数据库文件 proseflow.db 会在 backend/ 目录下自动创建。对于生产环境，建议替换为 PostgreSQL 或其他更健壮的数据库。
 
 ## 🤝 贡献指南
 
@@ -137,7 +139,3 @@ proseflow/
 ## 📄 许可证
 
 本项目采用 [MIT License](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/Deep-Octopus/proseflow/blob/main/LICENSE) 开源。
-
-导出样式: 导出为 PDF/Word 时，样式可能与在线预览有轻微差异。后端使用 Pandoc 进行转换，您可以修改 pandoc_service.py 来定制更复杂的导出样式。
-
-数据库: 项目默认使用 SQLite，数据库文件 proseflow.db 会在 backend/ 目录下自动创建。对于生产环境，建议替换为 PostgreSQL 或其他更健壮的数据库。
