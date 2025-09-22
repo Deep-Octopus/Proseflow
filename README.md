@@ -1,7 +1,7 @@
 # Proseflow ✨
 
 <p align="center">
-  <img src="https://gitee.com/zhang-jie-king/myfigurebed/raw/master/202509212305500.png" alt="Proseflow Logo" width="150"/>
+  <img src="logo.png" alt="Proseflow Logo" width="150"/>
 </p>
 
 <p align="center">
